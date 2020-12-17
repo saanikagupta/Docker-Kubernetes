@@ -1,0 +1,20 @@
+docker build .
+docker run Image_ID
+(Flag -d is for running redis in the background)
+docker run -d Image_ID
+
+(Tagging the image)
+docker build -t guptasaanika/redis:latest .
+(By default uses the latest version)
+docker run guptasaanika/redis
+
+(Executing an additional command in running container)
+(docker exec -it CONTAINER_ID <command>)
+(Examples)
+docker exec -it CONTAINER_ID redis-cli
+docker exec -it CONTAINER_ID sh
+
+(docker run = docker create + docker start)
+(Overriding the existing startup command of busybox by "echo hi there")
+docker create busybox echo hi there
+docker start IMAGE_ID

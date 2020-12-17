@@ -1,0 +1,13 @@
+(This command = docker run myimage)
+docker-compose up
+
+(This command = (docker build .) + (docker run myimage))
+docker-compose up --build
+
+(Start a group of containers in the background)
+docker-compose up -d
+(Stops the containers belonging to that yml file)
+docker-compose down
+
+(Status of containers belonging to that yml file)
+docker-compose ps

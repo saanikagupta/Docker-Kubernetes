@@ -1,0 +1,6 @@
+docker run -p 8080:8080 guptasaanika/simpleweb
+
+(Stopping the container)
+docker ps
+(Not necessary to copy paste the entire id)
+docker kill CONTAINER_ID
